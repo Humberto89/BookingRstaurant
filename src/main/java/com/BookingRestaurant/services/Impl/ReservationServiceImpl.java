@@ -4,7 +4,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import com.BookingRestaurant.entities.Reservation;
 import com.BookingRestaurant.entities.Restaurant;
 import com.BookingRestaurant.entities.Turn;
@@ -19,7 +18,6 @@ import com.BookingRestaurant.repositories.TurnRepository;
 import com.BookingRestaurant.services.ReservationService;
 
 @Service
-
 public class ReservationServiceImpl implements ReservationService{
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(ReservationServiceImpl.class);
@@ -55,7 +53,6 @@ public class ReservationServiceImpl implements ReservationService{
 			reservationRepository.save(reservation);
 			
 		} catch (final Exception e) {
-			
 			LOGGER.error("INTERNAL_SERVER_ERROR",e);
 			throw new InternalServerErrorException("INTERNAL_SERVER_ERROR", "INTERNAL_SERVER_ERROR");
 			

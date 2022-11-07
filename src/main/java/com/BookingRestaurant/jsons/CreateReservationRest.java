@@ -13,12 +13,12 @@ public class CreateReservationRest {
 
 	@JsonProperty("person")
 	private Long person;
-
-	@JsonProperty("restaurantId")
-	private Long restaurantId;
 	
 	@JsonProperty("turnId")
 	private Long turnId;
+	
+	@JsonProperty("restaurantId")
+	private Long restaurantId;
 
 	public Date getDate() {
 		return date;

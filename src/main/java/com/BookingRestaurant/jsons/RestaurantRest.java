@@ -1,7 +1,6 @@
 package com.BookingRestaurant.jsons;
 
 import java.util.List;
-
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -23,14 +22,9 @@ public class RestaurantRest {
 	@JsonProperty("image")
 	private String image;
 	
-	@JsonProperty("turn")
+	@JsonProperty("turns")
 	private List<TurnsRest> turns;
 	
-	@JsonProperty("board")
-	private List<BoardRest> boards;
-	
-	@JsonProperty("Reservation")
-	private List<ReservationRest> reservations;
 
 	public Long getId() {
 		return id;
